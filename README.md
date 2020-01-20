@@ -108,7 +108,13 @@ In Table 6 information about bpe tokens intersection between entities from diffe
 
 ---
 In Table 7 given a summary of the number of training sentences needed to achieve 99% of the full dataset performance 
-with pretrained Multi-BERT.
+with pretrained Multi-BERT. To determine the amount of the data when satisfying performance is achieved we used a 
+two-tailed t-test. The t-test was used to compare two models performances on the appropriate test set. The first model 
+that was trained on a full target dataset and the second one was pretrained on full source dataset and trained on a subset 
+of the target dataset.  We detected when the first time statistically significant difference is not achieved (statistical 
+significance level at 0.05) and the F-measure of the model trained on subset was at least 99% of the full dataset F-measure. 
+The interesting observation is that pretrained models reach this condition on both types of entities after training on 
+10–25% of sentences. And this situation keeps when larger subsets are used.
 
 | #sentences used                                     	| Entity type                   	| EN UGT               	| RU UGT             	| RU EHR               	|
 |-----------------------------------------------------	|-------------------------------	|----------------------	|--------------------	|----------------------	|
@@ -140,12 +146,12 @@ Disease                    |  Drug
 
 
 Citation:
-"""
+```
 @ARTICLE{ecir2020,
-author={Miftahutdinov, Z. and Alimova, I. and Tutubalina, E.},
-title={On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts},
-journal={Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-year={2020},
-volume={LNCS},
+    author={Miftahutdinov, Z. and Alimova, I. and Tutubalina, E.},
+    title={On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts},
+    journal={Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+    year={2020},
+    volume={LNCS},
 }
-"""
+```
