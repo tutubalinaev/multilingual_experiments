@@ -140,6 +140,8 @@ Figures below show the performance of  Multi-BERT models with pretraining on the
 Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number of sentences used for training.
 </p>
 
+<img src="./images/cadec_disease.png"/> <img src="./images/cadec_drug.png"/>
+
 Disease                    |  Drug
 :-------------------------:|:-------------------------:
 ![](images/cadec_disease.png)  |  ![](images/cadec_drug.png)
