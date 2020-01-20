@@ -142,7 +142,8 @@ Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number 
 
 <img src="./images/cadec_disease.png" width="430"/> <img src="./images/cadec_drug.png" width="430"/>
 <img src="./images/n2c2_disease.png" width="430"/> <img src="./images/n2c2_drug.png" width="430"/>
-<img src="./images/russian_reviews_disease.png" width="430"/> <img src="./images/russian_reviews_drug.png" width="430"/><img <img src="./images/russian_ehr_disease.png" width="430"/> <img src="./images/russian_ehr_drug.png" width="430"/>
+<img src="./images/russian_reviews_disease.png" width="430"/> <img src="./images/russian_reviews_drug.png" width="430"/> 
+<img src="./images/russian_ehr_disease.png" width="430"/> <img src="./images/russian_ehr_drug.png" width="430"/>
 
 
 Citations:
