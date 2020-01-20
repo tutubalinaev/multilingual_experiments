@@ -4,6 +4,7 @@ On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for 
 Overview: This repository contains additional materials of the paper "On Biomedical Named Entity Recognition:Experiments 
 in Interlingual Transfer for Clinicaland Social Media Texts" [1]
 
+
 In the the study 4 datasets were used
 1. [CADEC](https://yadi.sk/d/KEY1WrQTC1SQCQ)
 2. [N2C2](https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/)
@@ -136,3 +137,15 @@ Disease                    |  Drug
 Disease                    |  Drug
 :-------------------------:|:-------------------------:
 ![](images/russian_ehr_disease.png)  |  ![](images/russian_ehr_drug.png)
+
+
+Citation:
+"""
+@ARTICLE{ecir2020,
+author={Miftahutdinov, Z. and Alimova, I. and Tutubalina, E.},
+title={On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts},
+journal={Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+year={2020},
+volume={LNCS},
+}
+"""
