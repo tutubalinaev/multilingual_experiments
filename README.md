@@ -140,24 +140,9 @@ Figures below show the performance of  Multi-BERT models with pretraining on the
 Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number of sentences used for training.
 </p>
 
-<img src="./images/cadec_disease.png" width="420"/> <img src="./images/cadec_drug.png" width="420"/>
-
-Disease                    |  Drug
-:-------------------------:|:-------------------------:
-![](images/cadec_disease.png)  |  ![](images/cadec_drug.png)
-
-
-Disease                    |  Drug
-:-------------------------:|:-------------------------:
-![](images/n2c2_disease.png)  |  ![](images/n2c2_drug.png)
-
-Disease                    |  Drug
-:-------------------------:|:-------------------------:
-![](images/russian_reviews_disease.png)  |  ![](images/russian_reviews_drug.png)
-
-Disease                    |  Drug
-:-------------------------:|:-------------------------:
-![](images/russian_ehr_disease.png)  |  ![](images/russian_ehr_drug.png)
+<img src="./images/cadec_disease.png" width="430"/> <img src="./images/cadec_drug.png" width="430"/>
+<img src="./images/n2c2_disease.png" width="430"/> <img src="./images/n2c2_drug.png" width="430"/>
+<img src="./images/russian_reviews_disease.png" width="430"/> <img src="./images/russian_reviews_drug.png" width="430"/><img <img src="./images/russian_ehr_disease.png" width="430"/> <img src="./images/russian_ehr_drug.png" width="430"/>
 
 
 Citations:
