@@ -2,7 +2,8 @@ On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for 
 ---
 
 Overview: This repository contains additional materials of the paper "On Biomedical Named Entity Recognition:Experiments 
-in Interlingual Transfer for Clinical and Social Media Texts" (accepted to ECIR 2020).
+in Interlingual Transfer for Clinicaland Social Media Texts" [1]
+
 
 In the the study 4 datasets were used
 1. [CADEC](https://yadi.sk/d/KEY1WrQTC1SQCQ)
@@ -12,6 +13,7 @@ In the the study 4 datasets were used
 
 Code used for NER: https://github.com/dmis-lab/biobert \
 Bert multilingual model: https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip
+200-dim word embeddings trained on 2.5M user-generated posts about health problems [2]: https://github.com/dartrevan/ChemTextMining/blob/master/word2vec/Health_2.5mreviews.s200.w10.n5.v15.cbow.bin 
 
 ---
 
