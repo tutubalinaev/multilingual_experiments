@@ -14,7 +14,7 @@ In the the study 4 datasets were used
 4. [Russian Electronic Health Records](http://nlp.isa.ru/datasets/clinical)
 
 Code used for NER: https://github.com/dmis-lab/biobert \
-Bert multilingual model: https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip
+Bert multilingual model: https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip \
 200-dim word embeddings trained on 2.5M user-generated posts about health problems [2]: https://github.com/dartrevan/ChemTextMining/blob/master/word2vec/Health_2.5mreviews.s200.w10.n5.v15.cbow.bin 
 
 ---
@@ -172,7 +172,7 @@ Disease                    |  Drug
 
 Citations:
 
-[1]
+[1] Miftahutdinov Z. et al. On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts //European Conference on Information Retrieval. – Springer, Cham, 2020.
 
 ```
 @ARTICLE{ecir2020,
@@ -184,7 +184,7 @@ Citations:
 }
 ```
 
-[2]
+[2] Tutubalina E. V. et al. Using semantic analysis of texts for the identification of drugs with similar therapeutic effects //Russian Chemical Bulletin. – 2017. – Vol. 66. – №. 11. – Pp. 2180-2189.
 
 ```
 @article{tutubalina2017using,
