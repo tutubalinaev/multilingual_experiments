@@ -148,7 +148,7 @@ Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number 
 
 Citations:
 
-[1] Miftahutdinov Z. et al. On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts //European Conference on Information Retrieval. – Springer, Cham, 2020.
+[1] Miftahutdinov Z. et al. On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinical and Social Media Texts //European Conference on Information Retrieval. – Springer, Cham, 2020.
 
 ```
 @ARTICLE{ecir2020,
