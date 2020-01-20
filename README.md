@@ -2,8 +2,8 @@ On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for 
 ---
 
 <p style="text-align: center;">
-Overview: This repository contains additional materials of the paper "On Biomedical Named Entity Recognition:Experiments 
-in Interlingual Transfer for Clinicaland Social Media Texts" [1]
+Overview: This repository contains additional materials of the paper "On Biomedical Named Entity Recognition: Experiments 
+in Interlingual Transfer for Clinical and Social Media Texts" [1]
 </p>
 
 
@@ -13,8 +13,8 @@ In the the study 4 datasets were used
 3. [Russian Reviews](https://github.com/dartrevan/medical_text_processing/blob/master/dataset/russian_reviews.tar.gz)
 4. [Russian Electronic Health Records](http://nlp.isa.ru/datasets/clinical)
 
-Code used for NER: https://github.com/dmis-lab/biobert \
-Bert multilingual model: https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip \
+The source code of BioBERT NER model: https://github.com/dmis-lab/biobert \
+The source code of BERT multilingual model: https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip \
 200-dim word embeddings trained on 2.5M user-generated posts about health problems [2]: https://github.com/dartrevan/ChemTextMining/blob/master/word2vec/Health_2.5mreviews.s200.w10.n5.v15.cbow.bin 
 
 ---
@@ -24,11 +24,7 @@ Bert multilingual model: https://storage.googleapis.com/bert_models/2018_11_23/m
 ---
 
 <p style="text-align: center;">
-This table presents some basic corpus statistics. For each corpus Disease and Drug subtypes are given.
-In the study, all of the entity types presented in the "disease subtypes" column were merged in disease entity type.
-Similarly for the "drug subtypes" column. Total number of entities are given in the brackets. As well each corpus size is presented in the Table 1. 
-Corpora sizes in a number of documents and sentences, average document, sentence, and entities lengths 
-in tokens (not bpe)  as well are given in table 1. 
+This table presents the summary statistics of four corpora. For each corpus Disease and Drug entities' subtypes are given. In the study, all of the entity types presented in the "disease subtypes" column were merged into a single primary type named \emph{Disease}. Summary of each dataset includes the number of Drug and Disease entities, the number of documents and sentences, the average length of a document (in sentences), the average length of a sentence (in tokens), the average length of a Drug/Disease entity (in tokens).  
 </p>
 
 | Corpus               | Disease subtypes                      | Drug              | # doc. | # sent. | Avg. doc. len. | Avg. sent. len | Avg. Drug len | Avg. Dis. len |
@@ -50,7 +46,7 @@ Table 2 shows the performance of baseline models in "in-corpus" mode for Disease
 | Corpus         	| Models                            	| P                     	| R                        	|  F                       	| 
 |----------------	|-----------------------------------	|-------------------------	|-------------------------	|-------------------------	|
 | EN EHR (n2c2)  	| Multi-BERT<br>BioBERT<br>LSTM-CRF 	| 55.05<br>56.33<br>55.00 	| 63.91<br>65.56<br>56.95 	| 59.15<br>60.60<br>55.96 	| 
-| EN UGT (cadet) 	| Multi-BERT<br>BioBERT<br>LSTM-CRF 	| 65.62<br>67.14<br>64.68 	| 68.96<br>69.88<br>62.77 	| 67.25<br>68.48<br>63.71 	| 
+| EN UGT (cadec) 	| Multi-BERT<br>BioBERT<br>LSTM-CRF 	| 65.62<br>67.14<br>64.68 	| 68.96<br>69.88<br>62.77 	| 67.25<br>68.48<br>63.71 	| 
 | RU UGT         	| Multi-BERT<br>LSTM-CRF            	| 45.93<br>27.78          	| 53.33<br>17.44          	| 49.35<br>21.43          	| 
 | RU EHR         	| Multi-BERT<br>LSTM-CRF            	| 78.61<br>62.00          	| 75.96<br>61.69          	| 77.26<br>61.85          	| 
 ---
@@ -60,13 +56,13 @@ Table 2 shows the performance of baseline models in "in-corpus" mode for Disease
 ---
 
 <p style="text-align: center;">
-Table 3 shows the performance of baseline models in "in-corpus" mode for Drug entities. 
+Table 3 shows the performance of baseline models in the "in-corpus" mode for Drug entities measured by Precision (P), Recall (R), and F1-score (F). 
 </p>
 
 | Corpus         	| Models                            	|P                       	| R                        	|  F                       	|
 |----------------	|-----------------------------------	|-------------------------	|-------------------------	|-------------------------	|
 | EN EHR (n2c2)  	| Multi-BERT<br>BioBERT<br>LSTM-CRF 	|92.21<br>92.39<br>89.87 	| 92.58<br>92.97<br>89.70 	| 92.39<br>92.68<br>89.79 	|
-| EN UGT (cadet) 	| Multi-BERT<br>BioBERT<br>LSTM-CRF 	|79.40<br>87.27<br>78.50 	| 91.18<br>91.73<br>70.41 	| 84.88<br>89.44<br>74.23 	|
+| EN UGT (cadec) 	| Multi-BERT<br>BioBERT<br>LSTM-CRF 	|79.40<br>87.27<br>78.50 	| 91.18<br>91.73<br>70.41 	| 84.88<br>89.44<br>74.23 	|
 | RU UGT         	| Multi-BERT<br>LSTM-CRF            	|58.85<br>37.74          	| 62.14<br>40.31          	| 60.45<br>38.98          	|
 | RU EHR         	| Multi-BERT<br>LSTM-CRF            	|87.18<br>62.00          	| 82.93<br>79.49          	| 85.00<br>69.66          	|
 ---
@@ -76,7 +72,7 @@ Table 3 shows the performance of baseline models in "in-corpus" mode for Drug en
 ---
 
 <p style="text-align: center;">
-Table 4 shows the model "out-of-corpus" performance in zero-shot mode for Disease entities. 
+Table 4 shows the "out-of-corpus" model performance in zero-shot mode for Disease entities measured by Precision (P), Recall (R), and F1-score (F). 
 </p>
 
 | Train Corpus  | Target corpus                	| P                      	| R                       	| F                       	|
@@ -91,7 +87,7 @@ Table 4 shows the model "out-of-corpus" performance in zero-shot mode for Diseas
 
 --- 
 <p style="text-align: center;">
-Table 5 shows the model "out-of-corpus" performance in zero-shot mode for Drug entities.
+Table 5 shows the "out-of-corpus" model performance in zero-shot mode for Drug entities measured by Precision (P), Recall (R), and F1-score (F).
 </p>
 
 | Train Corpus  | Target corpus                	| P                       	| R                       	| F                       	|
@@ -106,7 +102,7 @@ Table 5 shows the model "out-of-corpus" performance in zero-shot mode for Drug e
 
 ---
 <p style="text-align: center;">
-In Table 6 information about bpe tokens intersection between entities from different datasets is given.
+In Table 6 summary statistics of Byte Pair Encoding (BPE) tokens of entities in four datasets are presented. Summary includes the number of unique BPE tokens, intersection between un. tokens, percentage of shared tokens from unique set.
 </p>
 
 
@@ -123,14 +119,7 @@ In Table 6 information about bpe tokens intersection between entities from diffe
 ---
 
 <p style="text-align: center;">
-In Table 7 given a summary of the number of training sentences needed to achieve 99% of the full dataset performance 
-with pretrained Multi-BERT. To determine the amount of the data when satisfying performance is achieved we used a 
-two-tailed t-test. The t-test was used to compare two models performances on the appropriate test set. The first model 
-that was trained on a full target dataset and the second one was pretrained on full source dataset and trained on a subset 
-of the target dataset.  We detected when the first time statistically significant difference is not achieved (statistical 
-significance level at 0.05) and the F-measure of the model trained on subset was at least 99% of the full dataset F-measure. 
-The interesting observation is that pretrained models reach this condition on both types of entities after training on 
-10–25% of sentences. And this situation keeps when larger subsets are used.
+Table 7 performs a summary of the number of training sentences needed to achieve 99% of the full dataset performance with pretrained Multi-BERT. We compared the performance of two models: (i) trained on a full target dataset (ii) pretrained on whole source dataset and trained on a subset of the target dataset. For each pretraining setup, we record the size of the subset when the model achieves at least 99\% of the F1-measure performed on the full dataset, and there was no statistical significance between the models' results. The statistical significance was measured with a t-test with the level at 0.05. It should be noted that pretrained models require only 10-20% of the target dataset to achieve results as good as full dataset performances. 
 </p>
 
 | pre-train Corpus                                    	| Entity type                   	| EN UGT               	| RU UGT             	| RU EHR               	|
@@ -139,7 +128,7 @@ The interesting observation is that pretrained models reach this condition on bo
 | best pre-train <br>worst pre-train <br>no pre-train 	| Disease<br>Disease<br>Disease 	| 1050<br>1050<br>1300 	| 700<br>900<br>1100 	| 1850<br>1850<br>1850 	|
 
 <p style="text-align: center;">
-Here is best pre-train is the model that was pre-trained on a dataset that showed the best results in the number of sentences 
+Here is best pre-train is the model that was pretrained on a dataset that showed the best results in the number of sentences 
 needed to achieve 99% of full dataset F-measure. Similarly for worst pre-train. no pre-train is model that was trained from
 scratch.
 </p> 
@@ -147,8 +136,7 @@ scratch.
 ---
 
 <p style="text-align: center;">
-Figures bellow shows the performance  of  Multi-BERT  models  with  pre-training on the source dataset (a corpus’s name 
-in a legend) or without pre-training (“No pretrain” line) for the EN UGT, RU UGT, RU EHR datasets. 
+Figures below show the performance of  Multi-BERT models with pretraining on the source dataset (a corpus name is in the legend) and without pretraining (“No pretrain” line) for the EN UGT, RU UGT, RU EHR datasets. 
 Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number of sentences used for training.
 </p>
 
