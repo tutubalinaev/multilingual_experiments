@@ -133,7 +133,7 @@ The interesting observation is that pretrained models reach this condition on bo
 10–25% of sentences. And this situation keeps when larger subsets are used.
 </p>
 
-| pre-train corpora                                    	| Entity type                   	| EN UGT               	| RU UGT             	| RU EHR               	|
+| pre-train Corpus                                    	| Entity type                   	| EN UGT               	| RU UGT             	| RU EHR               	|
 |-----------------------------------------------------	|-------------------------------	|----------------------	|--------------------	|----------------------	|
 | best pre-train <br>worst pre-train <br>no pre-train 	| Drug<br>Drug<br>Drug          	| 500<br>900<br>1050   	| 700<br>650<br>1000 	| 550<br>1200<br>1500  	|
 | best pre-train <br>worst pre-train <br>no pre-train 	| Disease<br>Disease<br>Disease 	| 1050<br>1050<br>1300 	| 700<br>900<br>1100 	| 1850<br>1850<br>1850 	|
