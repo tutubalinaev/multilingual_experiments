@@ -1,8 +1,10 @@
 On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts
 ---
 
+<p style="text-align: center;">
 Overview: This repository contains additional materials of the paper "On Biomedical Named Entity Recognition:Experiments 
 in Interlingual Transfer for Clinicaland Social Media Texts" [1]
+</p>
 
 
 In the the study 4 datasets were used
@@ -21,11 +23,13 @@ Bert multilingual model: https://storage.googleapis.com/bert_models/2018_11_23/m
 
 ---
 
+<p style="text-align: center;">
 This table presents some basic corpus statistics. For each corpus Disease and Drug subtypes are given.
 In the study, all of the entity types presented in the "disease subtypes" column were merged in disease entity type.
 Similarly for the "drug subtypes" column. Total number of entities are given in the brackets. As well each corpus size is presented in the Table 1. 
 Corpora sizes in a number of documents and sentences, average document, sentence, and entities lengths 
 in tokens (not bpe)  as well are given in table 1. 
+</p>
 
 | Corpus               | Disease subtypes                      | Drug              | # doc. | # sent. | Avg. doc. len. | Avg. sent. len | Avg. Drug len | Avg. Dis. len |
 |----------------------|---------------------------------------|-------------------|--------|---------|----------------|----------------|---------------|---------------|
@@ -39,7 +43,9 @@ in tokens (not bpe)  as well are given in table 1.
 
 ---
 
+<p style="text-align: center;">
 Table 2 shows the performance of baseline models in "in-corpus" mode for Disease entities. 
+</p>
 
 | Corpus         	| Models                            	| P                     	| R                        	|  F                       	| 
 |----------------	|-----------------------------------	|-------------------------	|-------------------------	|-------------------------	|
@@ -53,7 +59,9 @@ Table 2 shows the performance of baseline models in "in-corpus" mode for Disease
 
 ---
 
+<p style="text-align: center;">
 Table 3 shows the performance of baseline models in "in-corpus" mode for Drug entities. 
+</p>
 
 | Corpus         	| Models                            	|P                       	| R                        	|  F                       	|
 |----------------	|-----------------------------------	|-------------------------	|-------------------------	|-------------------------	|
@@ -67,7 +75,9 @@ Table 3 shows the performance of baseline models in "in-corpus" mode for Drug en
 
 ---
 
+<p style="text-align: center;">
 Table 4 shows the model "out-of-corpus" performance in zero-shot mode for Disease entities. 
+</p>
 
 | Train Corpus  | Target corpus                	| P                      	| R                       	| F                       	|
 |------------   |------------------------------	|------------------------	|-------------------------	|-------------------------	|
@@ -80,7 +90,9 @@ Table 4 shows the model "out-of-corpus" performance in zero-shot mode for Diseas
 #### Table 5
 
 --- 
+<p style="text-align: center;">
 Table 5 shows the model "out-of-corpus" performance in zero-shot mode for Drug entities.
+</p>
 
 | Train Corpus  | Target corpus                	| P                       	| R                       	| F                       	|
 |--------	    |------------------------------	|-------------------------	|-------------------------	|-------------------------	|
@@ -93,7 +105,9 @@ Table 5 shows the model "out-of-corpus" performance in zero-shot mode for Drug e
 #### Table 6
 
 ---
+<p style="text-align: center;">
 In Table 6 information about bpe tokens intersection between entities from different datasets is given.
+</p>
 
 
 | Dataset D1 	| Dataset D2 	| Entity type 	| # unique BPE in D1 	| # unique BPE in D2 	| D1 intersection D2 	| % from D1 	| % from D2 	|
@@ -107,6 +121,8 @@ In Table 6 information about bpe tokens intersection between entities from diffe
 #### Table 7
 
 ---
+
+<p style="text-align: center;">
 In Table 7 given a summary of the number of training sentences needed to achieve 99% of the full dataset performance 
 with pretrained Multi-BERT. To determine the amount of the data when satisfying performance is achieved we used a 
 two-tailed t-test. The t-test was used to compare two models performances on the appropriate test set. The first model 
@@ -115,17 +131,26 @@ of the target dataset.  We detected when the first time statistically significan
 significance level at 0.05) and the F-measure of the model trained on subset was at least 99% of the full dataset F-measure. 
 The interesting observation is that pretrained models reach this condition on both types of entities after training on 
 10–25% of sentences. And this situation keeps when larger subsets are used.
+</p>
 
-| #sentences used                                     	| Entity type                   	| EN UGT               	| RU UGT             	| RU EHR               	|
+| pre-train corpora                                    	| Entity type                   	| EN UGT               	| RU UGT             	| RU EHR               	|
 |-----------------------------------------------------	|-------------------------------	|----------------------	|--------------------	|----------------------	|
 | best pre-train <br>worst pre-train <br>no pre-train 	| Drug<br>Drug<br>Drug          	| 500<br>900<br>1050   	| 700<br>650<br>1000 	| 550<br>1200<br>1500  	|
 | best pre-train <br>worst pre-train <br>no pre-train 	| Disease<br>Disease<br>Disease 	| 1050<br>1050<br>1300 	| 700<br>900<br>1100 	| 1850<br>1850<br>1850 	|
+
+<p style="text-align: center;">
+Here is best pre-train is the model that was pre-trained on a dataset that showed the best results in the number of sentences 
+needed to achieve 99% of full dataset F-measure. Similarly for worst pre-train. no pre-train is model that was trained from
+scratch.
+</p> 
+
 ---
 
-
+<p style="text-align: center;">
 Figures bellow shows the performance  of  Multi-BERT  models  with  pre-training on the source dataset (a corpus’s name 
 in a legend) or without pre-training (“No pretrain” line) for the EN UGT, RU UGT, RU EHR datasets. 
 Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number of sentences used for training.
+</p>
 
 Disease                    |  Drug
 :-------------------------:|:-------------------------:
