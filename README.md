@@ -139,13 +139,32 @@ Disease                    |  Drug
 ![](images/russian_ehr_disease.png)  |  ![](images/russian_ehr_drug.png)
 
 
-Citation:
-"""
-@ARTICLE{ecir2020,
+Citations:
+
+
+[1] Miftahutdinov, Z. and Alimova, I. and Tutubalina, E. On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts //European Conference on Information Retrieval. – Springer, Cham, 2020. 
+```json
+@inproceedings{ecir2020,
 author={Miftahutdinov, Z. and Alimova, I. and Tutubalina, E.},
 title={On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts},
-journal={Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+booktitle={European Conference on Information Retrieval},
+pages={1--8},
 year={2020},
-volume={LNCS},
+volume={LNCS}
+organization={Springer}
 }
-"""
+```
+[2] Tutubalina E. V. et al. Using semantic analysis of texts for the identification of drugs with similar therapeutic effects //Russian Chemical Bulletin. – 2017. – Т. 66. – №. 11. – P. 2180-2189.
+```json
+@article{tutubalina2017using,
+  title={Using semantic analysis of texts for the identification of drugs with similar therapeutic effects},
+  author={Tutubalina, EV and Miftahutdinov, Z Sh and Nugmanov, RI and Madzhidov, TI and Nikolenko, SI and Alimova, IS and Tropsha, AE},
+  journal={Russian Chemical Bulletin},
+  volume={66},
+  number={11},
+  pages={2180--2189},
+  year={2017},
+  publisher={Springer}
+}
+```
+
