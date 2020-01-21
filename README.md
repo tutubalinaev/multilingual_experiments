@@ -145,6 +145,27 @@ Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number 
 <img src="./images/russian_reviews_disease.png" width="430"/><img src="./images/russian_reviews_drug.png" width="430"/> 
 <img src="./images/russian_ehr_disease.png" width="430"/><img src="./images/russian_ehr_drug.png" width="430"/>
 
+Conclusion
+---
+We studied the task of recognition of drug and disease mentions in English and a low-resource language in the 
+biomedical area, using a newly collected Russian corpus of user reviews about drugs (RU UGT) with 3,624 manually 
+annotated entities.
+ 
+We ask: can additional pretraining on an existing dataset be helpful for bioNER performance of multilingual BERT-based
+NER model on a new dataset with a small number of labeled examples if the domain, the language, or both shift between
+these datasets? Our study consisted of over 720 models trained on different subsets of two corpora in English and 
+two corpora in Russian. For each language, we experimented with the clinical domain, i.e., electronic health records,
+and the social media domain, i.e., reviews about drug therapy. As expected, models with pretraining on data in the
+same language or the same domain obtain better results in zero-shot or few-shot settings. To our surprise, we found
+that pretraining on data with two shifts can be effective. The model with the best pretraining achieves 99\% of the 
+full dataset performance using only 23.56\% of the training data on our RU URT corpus, while the model with 
+pretraining on data with two shifts (the EN EHR set) used 26.1\% of the training data. The model without pretraining
+achieves similar results on the RU URT corpus using 31.97\% of the training set. 
+
+We foresee three directions for future work. First, transfer learning and multi-task strategies on three and more 
+domains remain to be explored. Second, a promising research direction is the evaluation of multilingual BERT on a 
+broad set of entities. Third, future research will focus on the creation of fine-grained entity types in our corpus 
+of Russian reviews that can help in finding associations between drugs and adverse drug reactions.
 
 Citations:
 
