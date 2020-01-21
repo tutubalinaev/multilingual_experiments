@@ -145,7 +145,7 @@ Y-axis: F1-scores for detection of Drug or Disease mentions, X-axis: the number 
 <img src="./images/russian_reviews_disease.png" width="430"/><img src="./images/russian_reviews_drug.png" width="430"/> 
 <img src="./images/russian_ehr_disease.png" width="430"/><img src="./images/russian_ehr_drug.png" width="430"/>
 
-Conclusion
+Conclusion:
 ---
 We studied the task of recognition of drug and disease mentions in English and a low-resource language in the 
 biomedical area, using a newly collected Russian corpus of user reviews about drugs (RU UGT) with 3,624 manually 
@@ -168,6 +168,7 @@ broad set of entities. Third, future research will focus on the creation of fine
 of Russian reviews that can help in finding associations between drugs and adverse drug reactions.
 
 Citations:
+---
 
 [1] Miftahutdinov Z. et al. On Biomedical Named Entity Recognition:Experiments in Interlingual Transfer for Clinicaland Social Media Texts //European Conference on Information Retrieval. – Springer, Cham, 2020.
 
