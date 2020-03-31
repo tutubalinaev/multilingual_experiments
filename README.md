@@ -10,7 +10,7 @@ in Interlingual Transfer for Clinical and Social Media Texts" [1]
 In the the study 4 datasets were used
 1. [CADEC](https://yadi.sk/d/KEY1WrQTC1SQCQ)
 2. [N2C2](https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/)
-3. [Russian Reviews](https://github.com/dartrevan/medical_text_processing/blob/master/dataset/russian_reviews.tar.gz)
+3. [Russian User Reviews about Drug Therapy](https://github.com/dartrevan/medical_text_processing/blob/master/dataset/russian_reviews.tar.gz)
 4. [Russian Electronic Health Records](http://nlp.isa.ru/datasets/clinical)
 
 The source code of BioBERT NER model: https://github.com/dmis-lab/biobert \
